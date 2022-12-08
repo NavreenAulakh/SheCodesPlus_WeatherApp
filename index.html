@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container"></div>
+    <form id="city-search">
+      <input type="city" id="city-input" placeholder="Enter your city 🔍" />
+    </form>
+    <h1>📍 <span id="city-display"> Brampton, ON </span></h1>
+    <h2 id="date"></h2>
+
+    <p id="primary-temp">
+      <span id="current-temp">23 </span>
+      <span id="temp-units">
+        <a href="#" class="celsius"> °C</a> /
+        <a href="#" class="farenheit">°F</a>
+      </span>
+      <span id="main-emoji"> </span>
+
+      <span class="current-conditions">
+        Humidity:<span id="humidity">18</span>% <br />Wind:
+        <span id="wind">4</span>km/h
+      </span>
+    </p>
+
+    <div class="next-week-weather">
+      <div class="row">
+        <div class="col-sm">
+          Tue 06 <br />
+          <span class="week-emoji">☀️ </span> <br />
+          <strong> 11°</strong>
+        </div>
+        <div class="col-sm">
+          Wed 07 <br />
+          <span class="week-emoji">☁️ </span> <br />
+          <strong>9°C</strong>
+        </div>
+        <div class="col-sm">
+          Thu 08 <br /><span class="week-emoji">☀️ </span><br />
+          <strong>13°C</strong>
+        </div>
+        <div class="col-sm">
+          Fri 09 <br />
+          <span class="week-emoji">☀️ </span><br />
+          <strong> 12°C</strong>
+        </div>
+        <div class="col-sm">
+          Sat 10 <br />
+          <span class="week-emoji">☁️ </span><br />
+          <strong> 13°C</strong>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="current-location">
+      Current Location
+    </button>
+
+    <script src="src/app2.js"></script>
+  </body>
+</html>

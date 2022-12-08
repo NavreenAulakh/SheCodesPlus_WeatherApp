@@ -1,0 +1,79 @@
+body {
+  max-width: 55%;
+  margin: 40px auto;
+  color: #5a6275;
+  font-family: "Lato", sans-serif;
+}
+
+input {
+  width: 90%;
+  display: block;
+  margin: 15px auto;
+  border: solid 2px grey;
+  border-radius: 30px;
+  height: 50px;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+}
+
+input:hover {
+  background-color: #dcedff;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  left: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400px;
+  position: relative;
+  left: 60px;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: #41a5f5;
+  position: relative;
+  left: 30px;
+  transition: all 200ms ease-in-out;
+}
+
+.week-emoji {
+  font-size: 30px;
+}
+
+#current-temp {
+  font-size: 50px;
+  position: relative;
+  left: 30px;
+}
+
+#current-conditions {
+  text-align: right;
+  position: fixed;
+  top: 27%;
+  right: 23%;
+  font-size: 12px;
+}
+
+.next-week-weather {
+  background: #dcedff;
+  text-align: center;
+  border-radius: 5px;
+  border-top: solid #41a5f5 5px;
+}
+
+.col-sm {
+  padding: 15px;
+  transition: all 200ms ease-in-out;
+  background: #dcedff;
+}
+
+.col-sm:hover {
+  background: #ffd68a;
+  border-radius: 5px;
+}
